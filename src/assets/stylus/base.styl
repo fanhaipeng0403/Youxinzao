@@ -13,6 +13,7 @@ body, html
     clear: both
     visibility: hidden
 
+    //不同分辨率手机不同处理
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)
   .border-1px
     &::after
@@ -24,3 +25,4 @@ body, html
     &::after
       -webkit-transform: scaleY(0.5)
       transform: scaleY(0.5)
+
