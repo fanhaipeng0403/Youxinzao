@@ -4,7 +4,8 @@
     <div class="header-inner">
 
       <div class="site-log">
-        <h1><a href="" class="link-logo"></a></h1>
+        <img :src="logo" alt="由心造">
+        <h1><a href="wwww.youxinzao.com" class="link-logo"></a></h1>
       </div>
 
       <ul class="quick-menu">
@@ -25,6 +26,10 @@
 </template>
 
 <script>
+
+  import logo from '@/assets/log@2x.png'
+  // @1x @2x和@3x严格来说是苹果公司的专利。
+
   export default {
     name: "Header"
   }
