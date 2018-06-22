@@ -1,9 +1,9 @@
 <template>
 
-  <header class="main-header">
+  <header >
     <div class="header-inner">
-DSiASaoiSoiaisiisis
-      <!--<a href="https://wwww.youxinzao.com" class="link-logo"> <img :src="logo" alt="由心造"> </a><-->
+
+      <a href="https://wwww.youxinzao.com" class="link-logo"> <img class="logo" :src="logo" alt="由心造"> </a>
 
       <ul class="quick-menu">
         <li class="search"></li>
@@ -14,12 +14,12 @@ DSiASaoiSoiaisiisis
 
     </div>
     <nav class="nav-bar">
-       <ul class="popular-articles">
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-       </ul>
+      <ul class="popular-articles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
 
     </nav>
   </header>
@@ -31,8 +31,16 @@ DSiASaoiSoiaisiisis
   // @1x @2x和@3x严格来说是苹果公司的专利。
   // 有的地方就是没有，并不一定需要填充div
 
+  import logo from '@/assets/site-log.png'
+
+
   export default {
-    name: "Header"
+    name: "Header",
+    data() {
+      return {
+        logo,
+      }
+    }
 
   }
 </script>
@@ -40,6 +48,21 @@ DSiASaoiSoiaisiisis
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 
+  .header-inner
+    width 100%
+    height 88px
+    &:afetr
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.07);
+    display: block;
+    /* position: absolute; */
+    /* color: rgba(202, 18, 18, 0.07); */
+    content: "";
+    width: 100%;
+    height: 2px;
+    a
+      .logo
+        width 89px
+        height 46px
 
 </style>
 
