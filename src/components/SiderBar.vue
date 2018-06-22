@@ -1,7 +1,7 @@
 <template>
 
 
-  <aside>
+  <aside class="main-sidebar">
     <section>
 
     </section>

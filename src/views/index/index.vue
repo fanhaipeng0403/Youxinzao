@@ -1,17 +1,26 @@
 <template>
 
-  <div class="content-wrapper">
-  <section>
+  <div>
 
-
-  </section>
+<header></header>
 
   </div>
+
+
 </template>
 
 <script>
+
+   import header from '@/components/Header'
+
     export default {
-        name: "index"
+      name: "index",
+      components :{
+        header
+
+      }
+
+
     }
 </script>
 

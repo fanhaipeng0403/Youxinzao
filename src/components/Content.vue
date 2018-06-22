@@ -1,16 +1,17 @@
 <template>
 
-  <footer>
-    <strong>
+   <div class="content-wrapper">
+  <section>
 
-    </strong>
 
-  </footer>
+  </section>
+
+  </div>
 </template>
 
 <script>
     export default {
-        name: "Footer"
+        name: "Content"
     }
 </script>
 
