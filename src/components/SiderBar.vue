@@ -1,5 +1,12 @@
 <template>
 
+
+  <aside>
+    <section>
+
+    </section>
+
+  </aside>
 </template>
 
 <script>

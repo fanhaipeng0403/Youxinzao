@@ -1,5 +1,11 @@
 <template>
 
+  <footer>
+    <strong>
+      
+    </strong>
+
+  </footer>
 </template>
 
 <script>

@@ -1,15 +1,11 @@
 <template>
 
-  <div class="header">
+  <header class="main-header">
     <div class="header-inner">
 
-      <div class="site-log">
-        <img :src="logo" alt="由心造">
-        <h1><a href="wwww.youxinzao.com" class="link-logo"></a></h1>
-      </div>
+      <a href="https://wwww.youxinzao.com" class="link-logo"> <img :src="logo" alt="由心造"> </a><
 
       <ul class="quick-menu">
-
         <li class="search"></li>
         <li class="message"></li>
         <li class="editor"></li>
@@ -17,21 +13,29 @@
       </ul>
 
     </div>
-    <div class="nav">
+    <nav class="nav-bar">
+       <ul class="popular-articles">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
 
-    </div>
+    </nav>
 
-  </div>
+  </header>
 
 </template>
 
 <script>
 
-  import logo from '@/assets/log@2x.png'
   // @1x @2x和@3x严格来说是苹果公司的专利。
+  // 有的地方就是没有，并不一定需要填充div
+  import logo from '@/assets/log@2x.png'
 
   export default {
     name: "Header"
+
   }
 </script>
 
