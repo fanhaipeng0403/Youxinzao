@@ -2,7 +2,7 @@
 
   <div>
 
-<header></header>
+    <main-header></main-header>
 
   </div>
 
@@ -11,13 +11,12 @@
 
 <script>
 
-   import header from '@/components/Header'
+   import MainHeader from '@/components/Header'
 
     export default {
       name: "index",
       components :{
-        header
-
+        MainHeader
       }
 
 
