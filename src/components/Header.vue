@@ -1,12 +1,14 @@
 <template>
 
-  <header >
+  <header>
     <div class="header-inner">
 
       <a href="https://wwww.youxinzao.com" class="link-logo"> <img class="logo" :src="logo" alt="由心造"> </a>
 
       <ul class="quick-menu">
-        <li class="search"></li>
+        <li class="search">
+          <input type="text">
+        </li>
         <li class="message"></li>
         <li class="editor"></li>
         <li class="user"></li>
@@ -51,20 +53,23 @@
   .header-inner
     width 100%
     height 88px
+    display flex
     &:after
-     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.07);
-     display: block
-     position: absolute
-     color: rgba(202, 18, 18, 0.07)
-     content: "";
-     width: 100%;
-     height: 2px;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
+      display: block
+      position: absolute
+      color: rgba(202, 18, 18, 0.07)
+      content: "";
+      width: 100%;
+      height: 2px;
     a
+
       .logo
         width 89px
         height 46px
-        margin 10px 10px 10px 30px
-
+        /*margin 15px 10px 0px 25px*/
+    .quick-menu
+        /*position flex*/
 
 
 
