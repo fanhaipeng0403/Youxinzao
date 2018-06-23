@@ -51,18 +51,23 @@
   .header-inner
     width 100%
     height 88px
-    &:afetr
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.07);
-    display: block;
-    /* position: absolute; */
-    /* color: rgba(202, 18, 18, 0.07); */
-    content: "";
-    width: 100%;
-    height: 2px;
+    &:after
+     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.07);
+     display: block
+     position: absolute
+     color: rgba(202, 18, 18, 0.07)
+     content: "";
+     width: 100%;
+     height: 2px;
     a
       .logo
         width 89px
         height 46px
+        margin 10px 10px 10px 30px
+
+
+
+
 
 </style>
 
