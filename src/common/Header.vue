@@ -7,18 +7,16 @@
 
       <ul class="quick-menu">
         <li class="search">
-          <input type="text">
+      
         </li>
-        <li class="message">
-          <img class="logo" :src="message" alt="由心造">
-        </li>
-        <li class="editor">
 
-          <img class="logo" :src="editor" alt="由心造">
+         <li class="message">
+          <img :src="message" alt="由心造">
         </li>
+
         <li class="user">
 
-          <img class="logo" :src="avatar" alt="由心造">
+          <img :src="avatar" alt="由心造">
 
         </li>
       </ul>
@@ -46,7 +44,7 @@
   import message from '@/assets/image/message.png'
   import popular from '@/assets/image/popular.png'
   import editor from '@/assets/image/editor.png'
-  import avatar from '@/assets/image/avatar.png'
+  import avatar from '@/assets/image/avatar.jpg'
 
   export default {
     name: "Header",
@@ -68,7 +66,7 @@
 
   .header-inner
     width 100%
-    height 88px
+    height 100px
     &:after
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
       display: block
@@ -79,13 +77,30 @@
       height: 2px;
     a
       .logo
-        width 89px
-        height 46px
-        margin 15px 10px 0px 25px
-
-        /*position flex*/
-
-
+        width (89/1.2)px
+        height (46/1.2)px
+        margin 10px 10px 5px 25px
+    .quick-menu
+      position absolute
+      right 200px
+      top 0
+      display: flex;
+      align-items: center;
+      margin: 0px;
+      .message
+        display inline-block
+        margin 0px 20px 0px 0px
+        img
+         width 25px
+         height 25px
+      .user
+        display inline-block
+        margin 5px 20px 0px 0px
+        img
+         width 45px
+         height 45px
+         border: 1px solid #ddd;
+         border-radius: 50%;
 
 
 </style>

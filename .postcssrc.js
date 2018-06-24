@@ -6,9 +6,10 @@ module.exports = {
     "postcss-url": {},
     "autoprefixer": {},
     "postcss-pxtorem": {
-      "rootValue": 32,
+      "rootValue": 16,
       "propList": ["*"],
-      "selectorBlackList": ["weui-"]
     }
   }
 }
+
+// https://juejin.im/post/5a716c4c6fb9a01cb42cac4b
