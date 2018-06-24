@@ -21,13 +21,18 @@ exports.cssLoaders = function (options) {
       sourceMap: options.sourceMap
     }
   }
-
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
-      sourceMap: options.sourceMap
+      sourceMap: options.sourceMap,
+      plugins: [
+        require('postcss-pxtorem')({
+          'rootValue': 16,
+          propList: ['*']
+        })
+      ]
     }
-  }
+}
 
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {

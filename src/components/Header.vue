@@ -69,8 +69,6 @@
   .header-inner
     width 100%
     height 88px
-    display flex
-    justify-content space-between
     &:after
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
       display: block
@@ -84,9 +82,6 @@
         width 89px
         height 46px
         margin 15px 10px 0px 25px
-    .quick-menu
-      display flex
-      justify-content space-around
 
         /*position flex*/
 
