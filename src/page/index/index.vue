@@ -11,7 +11,7 @@
 
 <script>
 
-   import header from '@/components/Header'
+   import header from '@/common/Header'
 
     export default {
       name: "index",
