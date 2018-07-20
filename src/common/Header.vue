@@ -1,38 +1,19 @@
 <template>
+  <header style="top: 0px; padding-bottom: 54px;">
 
-  <header>
-    <div class="header-inner">
-
-      <a href="https://wwww.youxinzao.com" class="link-logo"> <img class="logo" :src="logo" alt="由心造"> </a>
-
-      <ul class="quick-menu">
-        <li class="search">
-      
-        </li>
-
-         <li class="message">
-          <img :src="message" alt="由心造">
-        </li>
-
-        <li class="user">
-
-          <img :src="avatar" alt="由心造">
-
-        </li>
+    <nav id="mainnavi">
+      <h1 class="logo"><a href="http://muuuuu.org/"><img style="width: 170px; height: 21px"
+                                                         src="http://muuuuu.org/common/img/logo.png"></a></h1>
+      <ul>
+        <li><a href="http://muuuuu.org/">阅览</a></li>
+        <li><a href="/about/">游记</a></li>
+        <li><a href="http://muuuuu.org/">移民</a></li>
+        <li><a class="current" href="/category" style="padding-bottom: 54px;">国家</a></li>
+        <li><a href="https://www.facebook.com/muuuuu.chang" target="_blank">论坛</a></li>
       </ul>
-
-    </div>
-    <nav class="nav-bar">
-      <ul class="popular-articles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
     </nav>
-  </header>
 
+  </header>
 </template>
 
 <script>
@@ -40,22 +21,11 @@
   // @1x @2x和@3x严格来说是苹果公司的专利。
   // 有的地方就是没有，并不一定需要填充div
 
-  import logo from '@/assets/image/site-log.png'
-  import message from '@/assets/image/message.png'
-  import popular from '@/assets/image/popular.png'
-  import editor from '@/assets/image/editor.png'
-  import avatar from '@/assets/image/avatar.jpg'
 
   export default {
     name: "Header",
     data() {
-      return {
-        logo,
-        message,
-        popular,
-        editor,
-        avatar,
-      }
+      return {}
     }
 
   }
@@ -63,44 +33,32 @@
 
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
+  header
+    background: url(../assets/image/navibg.png) no-repeat scroll left bottom rgba(0, 0, 0, 0);
+    left: 50%;
+    margin: 0 auto 60px -713px;
+    overflow: hidden;
+    padding-bottom: 54px;
+    padding-top: 90px;
+    position: fixed;
+    top: 0;
+    width: 1425px;
+    z-index: 99999;
 
-  .header-inner
-    width 100%
-    height 100px
-    &:after
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.07);
-      display: block
-      position: absolute
-      color: rgba(202, 18, 18, 0.07)
-      content: "";
-      width: 100%;
-      height: 2px;
-    a
-      .logo
-        width (89/1.2)px
-        height (46/1.2)px
-        margin 10px 10px 5px 25px
-    .quick-menu
-      position absolute
-      right 200px
-      top 0
-      display: flex;
-      align-items: center;
-      margin: 0px;
-      .message
-        display inline-block
-        margin 0px 20px 0px 0px
-        img
-         width 25px
-         height 25px
-      .user
-        display inline-block
-        margin 5px 20px 0px 0px
-        img
-         width 45px
-         height 45px
-         border: 1px solid #ddd;
-         border-radius: 50%;
+  .logo
+    display inline-block
+
+  ul
+    display inline-block
+    li
+      display inline-block
+      a
+        text-decoration: none
+        color: #333
+        margin-right: 25px;
+        font-size: 12px;
+        letter-spacing: 0.1em
+        font-weight: 400
 
 
 </style>
