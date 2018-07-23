@@ -21,6 +21,8 @@
 <script>
 
 
+
+
   export default {
     name: "Header",
     data() {
@@ -45,7 +47,8 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   header
-   transition:all 1300ms
+    transition: all 1300ms
+
   .logo
     display inline-block
 

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <v-header></v-header>
     <router-view/>
   </div>
 </template>
@@ -8,9 +9,15 @@
 
   /* 通常不用改，一般都是加入一个起到fixed作用的 nav就够了
    */
-export default {
-  name: 'App'
-}
+  import header from '@/common/Header'
+
+  export default {
+    name: 'App',
+    components: {
+      'v-header': header
+    }
+
+  }
 </script>
 
 
