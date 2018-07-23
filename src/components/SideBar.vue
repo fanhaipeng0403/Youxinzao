@@ -24,7 +24,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   .sidebar
-    transition: all 350ms cubic-bezier(0.75, 0, 0.175, 1);
+    transition: all 250ms cubic-bezier(0.75, 0, 0.175, 1);
     width: 70px;
     background: #295d72;
     position: fixed;

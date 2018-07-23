@@ -116,7 +116,7 @@
       border-bottom: 1px solid #ec652b
 
   .blur
-    filter: blur(5px);
+    filter: blur(2px);
 
 </style>
 
