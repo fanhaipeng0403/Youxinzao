@@ -11,10 +11,11 @@
 
 <script>
     export default {
-        name: "SiderBar"
+        name: "SideBar"
     }
 </script>
 
 <style scoped>
+
 
 </style>
