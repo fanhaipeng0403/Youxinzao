@@ -1,33 +1,35 @@
 <template>
-  <header :class="[isScrollTop ? 'header-mini' : 'header']">
+  <div :class="{'blur':isBlur}">
+    <header :class="[isScrollTop ? 'header-mini' : 'header']">
 
-    <nav>
-      <h1 class="logo"><a href="http://muuuuu.org/"><img
-        src="http://muuuuu.org/common/img/logo.png"></a></h1>
-      <ul>
-        <li><a :class="[isScrollTop?  'link-mini':'link']" href="http://muuuuu.org/">阅览</a></li>
-        <li><a :class="[isScrollTop? 'link-mini':'link']" href="/about/">游记</a></li>
-        <li><a :class="[isScrollTop? 'link-mini':'link']" href="http://muuuuu.org/">移民</a></li>
-        <li><a :class="[isScrollTop?  'link-mini':'link']" href="/category">国家</a></li>
-        <li><a :class="[isScrollTop? 'link-mini':'link']" href="https://www.facebook.com/muuuuu.chang"
-               target="_blank">论坛</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <h1 class="logo"><a href="http://muuuuu.org/"><img
+          src="http://muuuuu.org/common/img/logo.png"></a></h1>
+        <ul>
+          <li><a :class="[isScrollTop?  'link-mini':'link']" href="http://muuuuu.org/">阅览</a></li>
+          <li><a :class="[isScrollTop? 'link-mini':'link']" href="/about/">游记</a></li>
+          <li><a :class="[isScrollTop? 'link-mini':'link']" href="http://muuuuu.org/">移民</a></li>
+          <li><a :class="[isScrollTop?  'link-mini':'link']" href="/category">国家</a></li>
+          <li><a :class="[isScrollTop? 'link-mini':'link']" href="https://www.facebook.com/muuuuu.chang"
+                 target="_blank">论坛</a></li>
+        </ul>
+      </nav>
 
-  </header>
+    </header>
+  </div>
 
 </template>
 
 <script>
 
 
-
+  import {mapGetters} from 'vuex'
 
   export default {
     name: "Header",
     data() {
       return {
-        isScrollTop: 0
+        isScrollTop: 0,
       }
     },
     methods: {
@@ -37,6 +39,13 @@
       }
 
     },
+    computed:
+      {
+        ...mapGetters([
+        'isBlur'
+      ])
+      }
+    ,
     mounted() {
 
       window.addEventListener('scroll', this.handleScroll, true)
@@ -106,6 +115,8 @@
     &:hover
       border-bottom: 1px solid #ec652b
 
+  .blur
+    filter: blur(5px);
 
 </style>
 

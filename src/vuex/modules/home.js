@@ -1,7 +1,7 @@
 import * as types from '../types'
 
 const state = {
-  contentActive: true,
+  isBlur: false,
 }
 // const actions = {
 //   // home简要
@@ -20,9 +20,9 @@ const state = {
 //   }
 //
 // }
-// const getters = {
-//   homeDesc: state => state.homeDesc
-// }
+const getters = {
+  isBlur: state => state.isBlur
+}
 // const mutations = {
 //   [types.SET_HOME_DESC](state, res) {
 //     state.homeDesc = res
@@ -34,6 +34,6 @@ const state = {
 export default {
   state,
   // actions,
-  // getters,
+  getters,
   // mutations
 }
