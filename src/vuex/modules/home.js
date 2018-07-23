@@ -3,37 +3,23 @@ import * as types from '../types'
 const state = {
   isBlur: false,
 }
-// const actions = {
-//   // home简要
-//   gethomeDesc({commit}, type) {
-//     console.log('type', type)
-//     data.getTypeDesc(type).then(res => {
-//       // console.log('type data:', res)
-//       commit(types.SET_HOME_DESC, res)
-//     })
-//   },
-//   gethomeDetail({commit}, type, id) {
-//     data.getTypeDetail(type, id).then(res => {
-//       console.log('type data:', res)
-//       commit(types.SET_HOME_DETAIL, res)
-//     })
-//   }
-//
-// }
+const actions = {
+  changeActive({commit}, type) {
+    commit(types.CHANGE_ACTIVE)
+  },
+
+}
 const getters = {
   isBlur: state => state.isBlur
 }
-// const mutations = {
-//   [types.SET_HOME_DESC](state, res) {
-//     state.homeDesc = res
-//   },
-//   [types.SET_HOME_DETAIL](state, res) {
-//     state.homeDetail = res
-//   }
-// }
+const mutations = {
+  [types.CHANGE_ACTIVE](state) {
+    state.isBlur = !state.isBlur
+  },
+}
 export default {
   state,
-  // actions,
+  actions,
   getters,
-  // mutations
+  mutations
 }

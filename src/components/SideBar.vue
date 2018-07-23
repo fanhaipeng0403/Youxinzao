@@ -1,29 +1,22 @@
 <template>
 
 
-  <aside class="sidebar" @mouseenter="enter" @mouseleave="leave">
+  <aside class="sidebar" @mouseenter="changeActive" @mouseleave="changeActive">
 
   </aside>
 
 </template>
 
 <script>
+
+  import {mapActions} from 'vuex'
+
   export default {
     name: "SideBar",
-    data() {
-      return {
-        seen: false
-      }
-    },
     methods: {
-      enter: function () {
-        console.log(
-          'xxxx'
-        )
-      },
-      leave: function () {
-        console.log('yyy')
-      }
+      ...mapActions([
+        'changeActive'
+      ])
     }
 
   }
@@ -42,7 +35,7 @@
     font-size: 80%;
     overflow: hidden;
     &:hover
-      width 370px
+      width 18%
 
 
 </style>
