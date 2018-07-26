@@ -2,6 +2,7 @@
   <div id="app">
     <v-header></v-header>
     <side-bar></side-bar>
+    <go-top></go-top>
     <router-view/>
   </div>
 </template>
@@ -12,12 +13,14 @@
    */
   import header from '@/common/Header'
   import sideBar from '@/common/sideBar'
+  import GoTop from '@/components/GoTop'
 
   export default {
     name: 'App',
     components: {
       'v-header': header,
       sideBar,
+      GoTop,
     },
   }
 </script>

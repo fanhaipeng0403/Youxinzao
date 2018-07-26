@@ -376,7 +376,8 @@
 
       // ==5== 滚动事件
       scrollFn() {
-        this.$store.dispatch('headerMini')
+        this.$store.dispatch('scrollAction')
+
         if (this.isPreloading) return
         var minHeight = Math.min.apply(null, this.colsHeightArr)
         var scrollTop = $(window).scrollTop();

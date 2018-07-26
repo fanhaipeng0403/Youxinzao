@@ -2,30 +2,32 @@ import * as types from '../types'
 
 const state = {
   isBlur: false,
-  isScrollTop:0,
+  isScrollTop: false,
+  isScrollTMiddle: false,
 }
 const actions = {
   changeActive({commit}, type) {
     commit(types.CHANGE_ACTIVE)
   },
-  headerMini({commit}, type) {
+  scrollAction({commit}, type) {
     commit(types.JUDGE_SCROLL)
   },
-
 
 }
 const getters = {
   isBlur: state => state.isBlur,
-  isScrollTop: state => state.isScrollTop
+  isScrollTop: state => state.isScrollTop,
+  isScrollTMiddle: state => state.isScrollTMiddle
 }
 const mutations = {
   [types.CHANGE_ACTIVE](state) {
     state.isBlur = !state.isBlur
   },
+
   [types.JUDGE_SCROLL](state) {
     state.isScrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > 20
+    state.isScrollTMiddle =  (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > (2/3)*(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)
   },
-
 
 }
 export default {
