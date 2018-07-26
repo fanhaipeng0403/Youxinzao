@@ -3,7 +3,7 @@
   <div v-if='isScrollTMiddle' @click="backTop">
     <div class="scrollTop">
       <a href="javascript:">
-        <i>xxxxxxxx</i>
+        <i>xxxxxx</i>
       </a>
     </div>
   </div>
@@ -39,6 +39,6 @@
   .scrollTop
     position: fixed
     bottom: 36px
-    right: 95px
+    right: 45px
     transition: all 0.3s ease 0s;
 </style>

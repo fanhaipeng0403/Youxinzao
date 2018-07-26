@@ -26,7 +26,7 @@ const mutations = {
 
   [types.JUDGE_SCROLL](state) {
     state.isScrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > 20
-    state.isScrollTMiddle =  (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > (2/3)*(window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)
+    state.isScrollTMiddle =  (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > 850
   },
 
 }
