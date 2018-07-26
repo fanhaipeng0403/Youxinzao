@@ -1,8 +1,8 @@
 <template>
 
   <div>
-    <v-header></v-header>
 
+    <main-content></main-content>
 
   </div>
 
@@ -11,12 +11,12 @@
 
 <script>
 
-   import header from '@/common/Header'
+   import MainContent from '@/components/MainContent'
 
     export default {
       name: "index",
       components :{
-        'v-header': header
+        MainContent
       }
 
 
