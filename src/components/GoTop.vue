@@ -1,6 +1,6 @@
 <template>
 
-  <div v-if='isScrollTMiddle'>
+  <div v-if='isScrollTMiddle' @click="backTop">
     <div class="scrollTop">
       <a href="javascript:">
         <i>xxxxxxxx</i>
@@ -16,15 +16,23 @@
 
   export default {
     name: "GoTop",
+    methods: {
+      backTop() {
+        jQuery('body,html').animate({scrollTop: 0}, 500)
+      }
+    },
     computed:
-      { ...mapGetters([
+      {
+        ...mapGetters([
           'isScrollTMiddle'
         ])
       }
     ,
   }
 
+
 </script>
+
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 
