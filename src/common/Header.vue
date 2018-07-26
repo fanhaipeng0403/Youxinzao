@@ -7,11 +7,12 @@
           src="http://muuuuu.org/common/img/logo.png"></a></h1>
         <ul>
           <li><a :class="[isScrollTop?  'link-mini':'link']" href="http://muuuuu.org/">阅览</a></li>
-          <li><a :class="[isScrollTop? 'link-mini':'link']" href="/about/">游记</a></li>
-          <li><a :class="[isScrollTop? 'link-mini':'link']" href="http://muuuuu.org/">移民</a></li>
-          <li><a :class="[isScrollTop?  'link-mini':'link']" href="/category">国家</a></li>
+          <li><a :class="[isScrollTop? 'link-mini':'link']" href="/about/">案例</a></li>
+          <li><a :class="[isScrollTop? 'link-mini':'link']" href="http://muuuuu.org/">定制</a></li>
+          <li><a :class="[isScrollTop? 'link-mini':'link']" href="http://muuuuu.org/">回收</a></li>
+          <li><a :class="[isScrollTop?  'link-mini':'link']" href="/category">社区</a></li>
           <li><a :class="[isScrollTop? 'link-mini':'link']" href="https://www.facebook.com/muuuuu.chang"
-                 target="_blank">论坛</a></li>
+                 target="_blank">关于</a></li>
         </ul>
       </nav>
 
