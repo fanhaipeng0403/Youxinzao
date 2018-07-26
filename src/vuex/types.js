@@ -6,6 +6,7 @@
 // export const CHANGE_MYLIST_TAB = 'CHANGE_MYLIST_TAB'
 // 内容遮罩
 export const CHANGE_ACTIVE = 'CHANGE_ACTIVE'
+export const JUDGE_SCROLL = 'JUDGE_SCROLL'
 // 居家
 // export const SET_HOME_DESC = 'GET_HOME_DESC'
 // export const SET_HOME_DETAIL = 'GET_HOME_DETAIL'

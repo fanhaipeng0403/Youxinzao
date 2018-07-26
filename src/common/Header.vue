@@ -32,27 +32,17 @@
     name: "Header",
     data() {
       return {
-        isScrollTop: 0,
       }
     },
-    methods: {
 
-      handleScroll() {
-        this.isScrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > 20
-      }
-
-    },
     computed:
       {
         ...mapGetters([
-        'isBlur'
+        'isBlur',
+        'isScrollTop'
       ])
       }
     ,
-    mounted() {
-
-      window.addEventListener('scroll', this.handleScroll, true)
-    }
   }
 </script>
 

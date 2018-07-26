@@ -12,6 +12,7 @@
 <script>
   import vueWaterfallEasy from '@/components/vue-waterfall-easy'
   import {mapGetters} from 'vuex'
+  import {mapActions} from 'vuex'
 
   export default {
     name: 'MainContent',

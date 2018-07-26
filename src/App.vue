@@ -18,8 +18,7 @@
     components: {
       'v-header': header,
       sideBar,
-    }
-
+    },
   }
 </script>
 
